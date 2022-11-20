@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Perspectivepart
+Bundle-SymbolicName: com.vaughn.tradingcards.perspectivepart;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VAUGHN
+Require-Bundle: com.vaughn.tradingcards.ui,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.ui.model.workbench,
+ org.eclipse.e4.ui.workbench
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_UUU9YGcgEe2XFcU1Wg3C5A">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_hML8MGfGEe2WapnoP1cjzg" featurename="children" parentElementId="com.vaughn.tradingcards.ui.perspectivestack.0">
+    <elements xsi:type="advanced:Perspective" xmi:id="_oRfK8GfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.perspective.pokemon" label="Pokemon">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_t4lWUGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.partsashcontainer.0" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_vbO00GfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.partsashcontainer.1">
+          <children xsi:type="basic:PartStack" xmi:id="_yYcM0GfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_zgnV0GfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.part.pokemondb" contributionURI="bundleclass://com.vaughn.tradingcards.ui/com.vaughn.tradingcards.ui.parts.MagicDatabasePart" label="Pokemon DB"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_zE64UGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.partstack.1">
+            <children xsi:type="basic:Part" xmi:id="_zyw1wGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.part.mycards" contributionURI="bundleclass://com.vaughn.tradingcards.ui/com.vaughn.tradingcards.ui.parts.MyCardsPart" label="My Cards"/>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_xT18QGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.partsashcontainer.2" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_0GwIwGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.partstack.2">
+            <children xsi:type="basic:Part" xmi:id="_1P_owGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.part.cardnavigator" contributionURI="bundleclass://com.vaughn.tradingcards.ui/com.vaughn.tradingcards.ui.parts.CardNavigatorPart" label="Card Navigator"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_0zsHQGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.partstack.3">
+            <children xsi:type="basic:Part" xmi:id="_1f8JQGfGEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.part.cardinfo" contributionURI="bundleclass://com.vaughn.tradingcards.ui/com.vaughn.tradingcards.ui.parts.CardInformationPart" label="Card Info"/>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-1xawGfHEe2WapnoP1cjzg" featurename="children" parentElementId="com.vaughn.tradingcards.ui.menu.perspective">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_TA0XwGfIEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.handledmenuitem.pokemon" label="Pokemon" command="_H2neQGfKEe2WapnoP1cjzg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_EIlGQGfKEe2WapnoP1cjzg" featurename="commands" parentElementId="com.vaughn.tradingcards.ui.application">
+    <elements xsi:type="commands:Command" xmi:id="_H2neQGfKEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.command.pokemonperspective" commandName="Pokemon Perspective"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4c2-oGfMEe2WapnoP1cjzg" featurename="handlers" parentElementId="com.vaughn.tradingcards.ui.application">
+    <elements xsi:type="commands:Handler" xmi:id="_7OagQGfMEe2WapnoP1cjzg" elementId="com.vaughn.tradingcards.perspectivepart.handler.0" contributionURI="bundleclass://com.vaughn.tradingcards.perspectivepart/com.vaughn.tradingcards.perspectivepart.handlers.PokemonPerspectiveHandler" command="_H2neQGfKEe2WapnoP1cjzg"/>
+  </fragments>
+</fragment:ModelFragments>
