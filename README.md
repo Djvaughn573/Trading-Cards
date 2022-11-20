@@ -1,2 +1,2 @@
 # Trading-Cards-DB
-A database of cards for games like Magic.
+A database of cards from games like Magic.
