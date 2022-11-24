@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="__ON-YGuVEe2T4rFNdUpvJw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="__ON-YWuVEe2T4rFNdUpvJw" featurename="children" parentElementId="com.vaughn.tradingcards.ui.perspectivestack.0">
+    <elements xsi:type="advanced:Perspective" xmi:id="__ON-YmuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.perspective.magicperspective" label="Magic Perspective">
+      <children xsi:type="basic:PartSashContainer" xmi:id="__ON-Y2uVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partsashcontainer.0" horizontal="true">
+        <children xsi:type="basic:PartStack" xmi:id="__ON-ZGuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partstack.0">
+          <children xsi:type="basic:Part" xmi:id="__ON-ZWuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.part.cardinfo" contributionURI="bundleclass://com.vaughn.magic.ui/com.vaughn.magic.ui.parts.CardInformationPart" label="Card Info"/>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="__ON-ZmuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partsashcontainer.1" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="__ON-Z2uVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partstack.1">
+            <children xsi:type="basic:Part" xmi:id="__ON-aGuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.part.cardinfo" contributionURI="bundleclass://com.vaughn.magic.ui/com.vaughn.magic.ui.parts.MagicDatabasePart" label="MTG Database"/>
+            <children xsi:type="basic:Part" xmi:id="__ON-aWuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.part.gallery" toBeRendered="false" contributionURI="bundleclass://com.vaughn.magic.ui/com.vaughn.magic.ui.parts.GalleryPart" label="Gallery"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="__ON-amuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partstack.2">
+            <children xsi:type="basic:Part" xmi:id="__ON-a2uVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.part.mycards" contributionURI="bundleclass://com.vaughn.magic.ui/com.vaughn.magic.ui.parts.MyCardsPart" label="My Cards"/>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="__ON-bGuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partsashcontainer.2">
+          <children xsi:type="basic:PartStack" xmi:id="__ON-bWuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partstack.3">
+            <children xsi:type="basic:Part" xmi:id="__ON-bmuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.part.cardnavigator" contributionURI="bundleclass://com.vaughn.magic.ui/com.vaughn.magic.ui.parts.CardNavigatorPart" label="Card Navigator"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="__ON-b2uVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.partstack.4">
+            <children xsi:type="basic:Part" xmi:id="__ON-cGuVEe2T4rFNdUpvJw" elementId="com.vaughn.tradingcards.ui.part.printings" contributionURI="bundleclass://com.vaughn.magic.ui/com.vaughn.magic.ui.parts.PrintingsPart" label="Printings"/>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Otk5QGufEe2T4rFNdUpvJw" featurename="handlers" parentElementId="com.vaughn.tradingcards.ui.application">
+    <elements xsi:type="commands:Handler" xmi:id="_WcV7wGufEe2T4rFNdUpvJw" elementId="com.vaughn.magic.ui.handler.perspective" contributionURI="bundleclass://com.vaughn.magic.ui/com.vaughn.magic.ui.handlers.MagicPerspectiveHandler" command="_fUbWwGufEe2T4rFNdUpvJw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_bxh3wGufEe2T4rFNdUpvJw" featurename="commands" parentElementId="com.vaughn.tradingcards.ui.application">
+    <elements xsi:type="commands:Command" xmi:id="_fUbWwGufEe2T4rFNdUpvJw" elementId="com.vaughn.magic.ui.command.magicperspective" commandName="Magic Perspective"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_BVDuEGuhEe2T4rFNdUpvJw" featurename="children" parentElementId="com.vaughn.tradingcards.ui.menu.perspective">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_NS6nMGuhEe2T4rFNdUpvJw" elementId="com.vaughn.magic.ui.handledmenuitem.magicperspective" label="Magic Perspective" command="_fUbWwGufEe2T4rFNdUpvJw"/>
+  </fragments>
+</fragment:ModelFragments>

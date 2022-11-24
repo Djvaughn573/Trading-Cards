@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ui
+Bundle-SymbolicName: com.vaughn.magic.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VAUGHN
+Require-Bundle: com.vaughn.tradingcards.ui,
+ org.eclipse.e4.ui.workbench,
+ org.eclipse.e4.ui.model.workbench;resolution:=optional,
+ org.eclipse.e4.core.di,
+ org.eclipse.jface
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
