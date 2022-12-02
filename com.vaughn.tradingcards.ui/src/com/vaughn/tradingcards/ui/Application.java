@@ -25,10 +25,6 @@ import org.eclipse.ui.internal.ide.ChooseWorkspaceDialog;
 public class Application implements IApplication {
     private static Application application;
     private static E4Application e4Application = new E4Application();
-//    private URL url;
-//    private static Display display;
-//    private Location instanceLoc;
-//    private Shell shell;
 
 //    public Application() {
 //    }
