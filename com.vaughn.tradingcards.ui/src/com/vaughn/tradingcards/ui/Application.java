@@ -83,20 +83,5 @@ public class Application implements IApplication {
 	@Override
 	public void stop() {
 		e4Application.stop();
-//		if (!PlatformUI.isWorkbenchRunning())
-//			return;
-//		final IWorkbench workbench = PlatformUI.getWorkbench();
-//		final Display display = workbench.getDisplay();
-//		display.syncExec(new Runnable() {
-//			public void run() {
-//				if (!display.isDisposed())
-//					workbench.close();
-//			}
-//		});
 	}
-	
-//	@Override
-//	public void stop() {
-//		e4Application.stop();
-//	}
 }
