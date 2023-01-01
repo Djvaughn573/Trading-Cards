@@ -26,8 +26,6 @@ public class WorkspaceDialog extends Dialog {
 	private WorkspaceData launchData;
 	private Text text;
 	private boolean suppressAskAgain;
-//	private boolean dontAskAgain = false;
-//	private boolean centerOnMonitor = true;
 
 	public WorkspaceDialog (Shell parentShell, WorkspaceData launchData, boolean suppressAskAgain) {
 		super(parentShell);
@@ -97,10 +95,6 @@ public class WorkspaceDialog extends Dialog {
 	protected Point getInitialLocation(Point initialSize) {
 		Composite parent = getShell().getParent();
 
-//		if (!centerOnMonitor || parent == null) {	//	Originally !centerOnMonitor.
-//			return super.getInitialLocation(initialSize);
-//		}
-
 		Monitor monitor = parent.getMonitor();
 		Rectangle monitorBounds = monitor.getClientArea();
 		Point centerPoint = Geometry.centerPoint(monitorBounds);
@@ -138,7 +132,6 @@ public class WorkspaceDialog extends Dialog {
 	 */
 	private void workspaceSelected(String workspace) {
 		launchData.workspaceSelected(TextProcessor.deprocess(workspace));
-//    	super.okPressed();
 	}
 
 	/**
@@ -159,8 +152,7 @@ public class WorkspaceDialog extends Dialog {
     //	Used to create a bar for the user to select a workspace.
     protected Control createSelectionBar(Composite parent) {
     	Composite composite = new Composite(parent, SWT.NONE);
-		// create a layout with spacing and margins appropriate for the font
-		// size.
+		// create a layout with spacing and margins appropriate for the font size.
 		GridLayout layout = new GridLayout();
 		layout.numColumns = 3;
 		layout.marginWidth = convertHorizontalDLUsToPixels(IDialogConstants.HORIZONTAL_MARGIN);
@@ -201,7 +193,6 @@ public class WorkspaceDialog extends Dialog {
         		String selectedDir = dialog.open();
         		if(selectedDir != null){
         			text.setText(selectedDir);
-//        			launchData.workspaceSelected(selectedDir);
         		}
         		// else don't setText
         	}
@@ -226,12 +217,9 @@ public class WorkspaceDialog extends Dialog {
         if (force) {
             open();
 
-			// Bug 70576: Dialog gets dismissed via ESC and via the window's
-			// close box. Make sure the launch doesn't continue with the default
-			// workspace.
             if (getReturnCode() == CANCEL) {
-				launchData.workspaceSelected(null);
-			}
+		launchData.workspaceSelected(null);
+	    }
 
             return;
         }
@@ -242,11 +230,11 @@ public class WorkspaceDialog extends Dialog {
         // most recent selection or the initialDefault (if there is no history).
         String workspace = null;
         if (recent != null && recent.length() > 0) {
-			workspace = recent;
-		}
+		workspace = recent;
+	}
         if (workspace == null || workspace.length() == 0) {
-			workspace = launchData.getInitialDefault();
-		}
+		workspace = launchData.getInitialDefault();
+	}
         launchData.workspaceSelected(TextProcessor.deprocess(workspace));
     }
 
