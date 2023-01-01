@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_tJruYGcVEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_t-HcAGcVEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.trimmedwindow.tradingcards" label="Trading Cards">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_wSHe8GcVEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.perspectivestack.0"/>
+    <mainMenu xmi:id="_FBxS8GcYEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_GLeF8GcYEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.menu.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_MDJD8GcYEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.handledmenuitem.exit" label="Exit" command="_U7wN8GcZEe2-I_EUKyN7Xw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_HscJcGcYEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.menu.edit" toBeRendered="false" label="Edit"/>
+      <children xsi:type="menu:Menu" xmi:id="_KLgM4GcYEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.menu.perspective" label="Perspective"/>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_DZOV4GcaEe2-I_EUKyN7Xw" elementId="com.vaughn.tradingcards.ui.handler.0" contributionURI="bundleclass://com.vaughn.tradingcards.ui/com.vaughn.tradingcards.ui.handlers.ExitHandler" command="_U7wN8GcZEe2-I_EUKyN7Xw"/>
+  <commands xmi:id="_U7wN8GcZEe2-I_EUKyN7Xw" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <addons xmi:id="_tJruYWcVEe2-I_EUKyN7Xw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_tJruYmcVEe2-I_EUKyN7Xw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_tJruY2cVEe2-I_EUKyN7Xw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_tJruZGcVEe2-I_EUKyN7Xw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_tJruZWcVEe2-I_EUKyN7Xw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_tJruZmcVEe2-I_EUKyN7Xw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_tJruZ2cVEe2-I_EUKyN7Xw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>
